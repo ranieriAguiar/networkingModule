@@ -1,0 +1,6 @@
+use_frameworks!
+target 'networkingModule_Tests' do
+  pod 'networkingModule', :path => '../'
+  
+  
+end
