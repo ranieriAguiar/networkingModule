@@ -1,0 +1,22 @@
+{
+  "name": "networkingModule",
+  "version": "0.1.0",
+  "summary": "A short description of networkingModule.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ranieriAguiar/networkingModule",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ranieriAguiar": "ranieri.aguiar@parceiros.nos.pt"
+  },
+  "source": {
+    "git": "https://github.com/ranieriAguiar/networkingModule.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "networkingModule/Classes/**/*"
+}
