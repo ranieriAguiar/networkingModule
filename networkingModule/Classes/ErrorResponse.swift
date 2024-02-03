@@ -5,7 +5,7 @@
 //  Created by Ranieri Aguiar on 25/10/22.
 //
 
-enum ErrorResponse: String, Error {
+public enum ErrorResponse: String, Error {
     case apiError
     case invalidEndpoint
     case invalidResponse

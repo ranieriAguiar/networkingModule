@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum HTTPMethod: String {
+public enum HTTPMethod: String {
     case get = "GET"
     case post = "POST"
     case put = "PUT"
@@ -15,7 +15,7 @@ enum HTTPMethod: String {
     case delete = "DELETE"
 }
 
-protocol Endpoint {
+public protocol Endpoint {
     associatedtype Response
     
     var url: String { get }
@@ -26,14 +26,14 @@ protocol Endpoint {
     func decode(_ data: Data) throws -> Response
 }
 
-extension Endpoint where Response: Decodable {
+public extension Endpoint where Response: Decodable {
     func decode(_ data: Data) throws -> Response {
         let decoder = JSONDecoder()
         return try decoder.decode(Response.self, from: data)
     }
 }
 
-extension Endpoint {
+public extension Endpoint {
     var headers: [String : String] {
         [:]
     }

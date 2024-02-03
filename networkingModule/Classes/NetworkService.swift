@@ -7,15 +7,15 @@
 
 import Foundation
 
-protocol NetworkService {
+public protocol NetworkService {
     func request<E: Endpoint>(
         request: E,
         completion: @escaping (Result<E.Response, Error>) -> Void
     )
 }
 
-final class DefaultNetworkService: NetworkService {
-    func request<E: Endpoint>(
+public final class DefaultNetworkService: NetworkService {
+    public func request<E: Endpoint>(
         request: E,
         completion: @escaping (Result<E.Response, Error>) -> Void
     ) {
